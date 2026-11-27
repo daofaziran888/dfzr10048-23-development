@@ -24,6 +24,7 @@ from app.services.sample_qc import SampleQcService
 from app.services.delivery_receipt import DeliveryReceiptService
 from app.services.archive_shelf import ArchiveShelfService
 from app.services.media_audit import MediaAuditService
+from app.services.signoff_reverify import signoff_reverify_service
 
 SERVICES: dict[str, BaseModuleService] = {
     "media_source": MediaSourceService(),
@@ -48,6 +49,7 @@ SERVICES: dict[str, BaseModuleService] = {
     "delivery_receipt": DeliveryReceiptService(),
     "archive_shelf": ArchiveShelfService(),
     "media_audit": MediaAuditService(),
+    "signoff_reverify": signoff_reverify_service,
 }
 
 
